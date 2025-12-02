@@ -1,1 +1,2 @@
-# system_engineering-devops
+first repository
+GitHub learning task
