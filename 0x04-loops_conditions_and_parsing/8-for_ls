@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script lists files in the current directory, displaying only the name after the first dash.
+
+for filename in *; do
+    # This parameter expansion removes the shortest match of '*-' from the beginning of the filename.
+    # Example: '1-for_best_school' becomes 'for_best_school'
+    echo "${filename#*-}"
+done
