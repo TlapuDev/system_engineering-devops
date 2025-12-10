@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script sends the SIGTERM signal to the 7-highlander process.
+
+# We use pkill to send the default SIGTERM (Signal 15)
+pkill 7-highlander
