@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script displays the phrase "Best School" exactly 10 times using an until loop.
+COUNT=0
+until [ $COUNT -ge 10 ]; do
+    echo "Best School"
+    COUNT=$((COUNT + 1))
+done
