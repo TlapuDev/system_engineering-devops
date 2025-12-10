@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
 # This script displays "To infinity and beyond" indefinitely and handles the SIGTERM signal.
 
-# Function to run when SIGTERM is received
-handle_sigterm() {
-    echo "I am invincible!!!"
-}
-
-# Trap SIGTERM (Signal 15) and execute the function
-trap 'handle_sigterm' SIGTERM
+# Trap SIGTERM (Signal 15) and execute the echo command directly
+trap 'echo "I am invincible!!!"' SIGTERM
 
 while true; do
     echo "To infinity and beyond"
